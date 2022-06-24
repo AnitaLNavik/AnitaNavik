@@ -1,0 +1,48 @@
+2. Write a java program to print the following pattern
+    *
+   **
+  ***
+ ****
+*****
+code :
+
+package Anita;
+/**
+ * 
+ * @author Anita Navik
+ *
+ */
+
+public class StarPattern {
+public static void main(String[] args) {
+		
+		pyramid();   
+		}
+
+	private static void pyramid() {
+		//i for rows and j for columns      
+		//row denotes the number of rows you want to print  
+		int i, j, row = 5;       
+		//Outer loop work for rows  
+		for (i=0; i<row; i++)   
+		{  
+		//inner loop work for space      
+		for (j=2*(row-i); j>=0; j--)  //j=8 j=7       
+		{  
+		//prints space between two stars      
+		System.out.print(" ");   
+		}   
+		//inner loop for columns  
+		for (j=0; j<=i; j++ )   
+		{   
+		//prints star      
+		System.out.print("* ");   
+		}   
+		//throws the cursor in a new line after printing each line  
+		System.out.println();   
+		}
+	}   
+
+}
+
+
